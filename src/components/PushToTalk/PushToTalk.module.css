@@ -1,0 +1,124 @@
+.container {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.recording {
+  border-radius: 100%;
+}
+
+.iconDiv {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 50%;
+  display: table;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.iconDiv:hover {
+  transform: scale(110%);
+  transition: 0.2s;
+}
+
+.icon {
+  transform: scale(180%);
+  display: table-cell;
+  color: #919191;
+  transition: 0.2s;
+
+}
+
+.iconRec {
+  transform: scale(200%);
+  display: table-cell;
+  color: #003ca4;
+  transition: 0.2s;
+}
+
+.pulseBlue {
+  animation: pulseBlue 1s infinite;
+}
+
+.pulseRed {
+  animation: pulseRed 1s infinite;
+}
+
+
+
+.container:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulseBlue {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 234, 255, 0.4);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 0px rgba(0, 234, 255, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 234, 255, 0);
+  }
+}
+
+@keyframes pulseBlue {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(0, 234, 255, 0.4);
+    box-shadow: 0 0 0 0 rgba(0, 234, 255, 0.4);
+  }
+
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(0, 234, 255, 0);
+    box-shadow: 0 0 0 18px rgba(0, 234, 255, 0);
+  }
+
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(0, 234, 255, 0);
+    box-shadow: 0 0 0 0 rgba(0, 234, 255, 0);
+  }
+}
+
+
+@-webkit-keyframes pulseRed {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 0px rgba(0, 234, 255, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 234, 255, 0);
+  }
+}
+
+@keyframes pulseRed {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
+  }
+
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(0, 234, 255, 0);
+    box-shadow: 0 0 0 18px rgba(0, 234, 255, 0);
+  }
+
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(0, 234, 255, 0);
+    box-shadow: 0 0 0 0 rgba(0, 234, 255, 0);
+  }
+}
+
+/* @media screen and (max-width:680px) {
+  .container {
+    text-align: right;
+  }
+} */

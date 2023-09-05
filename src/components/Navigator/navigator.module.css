@@ -1,0 +1,77 @@
+.main {
+  position: absolute;
+  right: 7%;
+  top: 3%;
+  display: flex;
+  color: #fff;
+}
+
+.stage {
+  display: flex;
+  position: relative;
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  text-align: center;
+  display: table;
+}
+
+.circle p {
+  position: relative;
+  font-size: larger;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.circle span {
+  position: absolute;
+  bottom: -80%;
+  left: 7vw;
+  font-size: 14px;
+
+}
+
+.circle .firstStageName {
+  left: 0;
+}
+
+.line {
+  width: 7vw;
+  position: relative;
+  top: 50%;
+  border-top: 1px dashed #cccccc81;
+
+}
+
+.solidLine {
+  width: 7vw;
+  position: relative;
+  top: 50%;
+  border-top: 1px solid #cccccc81;
+
+}
+
+.stage .active {
+  /* background-color: green;*/
+  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.407);
+}
+
+.stage .visited {
+  background-color: #ccc;
+}
+
+.stage .visited {
+  background: transparent url('../../assets/icons/tick.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #9a9a9a;
+  background-size: 25px;
+}
+
+.stage .visited p {
+  opacity: 0;
+}
